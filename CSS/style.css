@@ -6,13 +6,13 @@ padding:0px;
 /*Nav bar*/
 .header{
 	display: flex;
-	background-color:black;
+	background-color:#21243d;
 	width:100%;
 }
 
 .nav-bar{
 	min-height:40px;
-	position:relative; 	
+	position:relative;
 }
 
 .nav-bar a{
@@ -23,6 +23,7 @@ padding:0px;
 
 .nav-bar a:hover{
 	color:#000;
+
 }
 
 .nav-bar .menu-options{
@@ -32,13 +33,16 @@ padding:0px;
 
 .menu-options li{
 	margin:10px;
-	color:white;
+	color:#f9f9f9;
 	text-align:center;
 	padding:5px;
+	font-size: 18px;
+	font-family: 'Merriweather', serif;
+
 }
 
 .menu-options li:hover{
-	background-color: #666;
+	background-color: #c9d1d3;
 	color:black;
 }
 
@@ -81,8 +85,9 @@ padding:0px;
 .body-container{
 	min-height:490px;
 	width:80%;
-	background-color:#f1f1f1;
+	background-color:#f9f9f9;
 	margin:auto;
+	font-family: 'Merriweather', serif;
 }
 
 /*End Body container*/
@@ -90,13 +95,13 @@ padding:0px;
 /*footer*/
 .footer-site-map{
 	min-height:100px;
-	background-color:black;
+	background-color:#21243d;
 }
 
 .footer-foot{
 	min-height: 30px;
 	color:white;
-	background-color:black;
+	background-color:#21243d;
 	text-align: center;
 }
 
@@ -130,7 +135,8 @@ padding:0px;
   font-weight: bold;
   align-items: center;
   position: relative;
-  cursor: pointer; 
+  cursor: pointer;
+	color: #192965;
 }
 .accordion-item-header::after {
   content: "\002B";
@@ -152,6 +158,8 @@ padding:0px;
   font-size:20px;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+	//font-family: 'Cairo', sans-serif;
+	font-family: 'Merriweather', serif;
 }
 
 @media(max-width:767px) {
