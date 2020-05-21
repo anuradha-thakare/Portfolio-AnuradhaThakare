@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AnuradhaThakare</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/bootstrap.css">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<script src="../Js/jquery-3.5.0.min.js"></script>
+	<script src="../Js/bootstrap.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+</head>
+<body>
+	<!--Navbar-->
+	<div class="header">
+		<div class="menu-toggle">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
+		<br><br>
+		<nav class="nav-bar ">
+			<ul class="menu-options ">
+				<li><a href="../index.html">Profile</a></li>
+				<li><a href="./Achievements.html">Honours / Achievements</a>	</li>
+				<li><a href="./Awards.html">Awards / Certification</a>	</li>
+				<li><a href="./Patents.html">Patents / Research</a></li>
+				<li><a href="./Workshops.html">Workshops / Webinars</a></li>
+				<li><a href="./ProfessionalExp.html">Professional Experience</a></li>
+				<li><a href="./MyContent.html">My Content</a></li>
+				<li><a href="./Gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+
+	</div>
+
+	<!--End Navbar-->
+	<br><br>
+	<!--Body main-->
+	<div class="body-container">
+		<h1>Professional Experience Page<h2>
+
+			<div class="accordion-container">
+				<div class="accordion">
+				<div class="accordion-item" >
+					<div class="accordion-item-header">
+							Professional Experience
+					</div>
+					<div class="accordion-item-body">
+						<div class="accordion-item-body-content">
+								<ol>
+									<li>Secretary of Institution of Engineering and Technology (IET) Pune LN, Member IET.</li>
+									<li>Subject Chairman, Paper Setter, Local selection committee member, UGC Faculty selection.</li>
+									<li>Committee member, External for ME dissertation exams and PhD defense in Savitribai Phule Pune University and other universities.</li>
+								</ol>
+						</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="accordion">
+				<div class="accordion-item" >
+					<div class="accordion-item-header">
+							Responsibilities Handled
+					</div>
+					<div class="accordion-item-body">
+						<div class="accordion-item-body-content">
+								<ol>
+									<li>Worked as M. E. Coordinator for Computer Engineering from Jun 2013.</li>
+									<li>Working as a core team member of NBA Program Accreditation Committee, of Computer Engineering Department.</li>
+									<li>Worked as Research coordinator of the department from Jan. 2014 to Jun 2015.</li>
+									<li>Organized and coordinated various workshops and FDPs for faculty and UG as well as PG students.</li>
+									<li>Worked as In-charge of Higher Studies Cell of PCCOE from 2010 to 2013.</li>
+									<li>Successfully conducted Infosys Campus connect program for the academic year 2008-09 for the students of all branches.</li>
+									<li>Worked as senior supervisor for the university exam held in 2010-11.</li>
+									<li>Working as a subject chairman for ME theory subjects.</li>
+									<li>Coordinated workshop on ‘Implementation of FPL Online Exam’.</li>
+									<li>Worked as Academic Coordinator of the department.</li>
+									<li>Guided various research projects at UG as well as PG level followed by reputed publications.</li>
+									<li>Worked as a In-charge of various committees in National level competitions conducted by college from last five years.</li>
+
+								</ol>
+						</div>
+					</div>
+				</div>
+				</div>
+
+
+				<div class="accordion">
+					<div class="accordion-item" >
+						<div class="accordion-item-header">
+						    Initiatives and MoUs
+						</div>
+						<div class="accordion-item-body">
+							<div class="accordion-item-body-content">
+					   			<ol>
+										<li>Dr. Anuradha Thakare has taken an initiative to start PCCOE IET (Institution of Engineering & Technology) Student Chapter.</li>
+										<li>Dr. Anuradha Thakare has taken initiative to start Center of Excellence in Information and Cyber Security in Association with SoftTech Data Security, Pune.  </li>
+										<li>Dr. Anuradha Thakare, Anagha Chaudhari and Kapil Tajane have taken initiative to start a professional student chapter, PCCOE On Campus on 5th March 2020.</li>
+										<li>MoU is signed with SoftTech Data Security through which students will be benefited in terms of - Internships, Training on Technical courses, Access to license softwares, Project Sponsorship, Faculty members can deliver training modules with industry people as a revenue generation model.</li>
+										<li>Dr. Anuradha Thakare and Mrs Sonal Gore has taken initiative to establish MoU with Snehachikitsalaya under Center for Healthcare Data Analytics.</li>
+
+					   			</ol>
+							</div>
+						</div>
+					</div>
+		   		</div>
+			</div>
+	</div>
+
+	<!--End Body main-->
+	<br><br>
+	<!--Footer-->
+	<div class="footer">
+		<div class="site-map">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-github"></i></a>
+			<a href="#"><i class="fab fa-twitter-square"></i></a>
+			<a href="#"><i class="fab fa-youtube"></i></a>
+		</div>
+		<div class="footer-foot">
+			Copy Rights <span>&copy;</span> 2020
+		</div>
+	</div>
+	<!--End Footer-->
+</body>
+<script>
+	const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+		accordionItemHeaders.forEach(accordionItemHeader => {
+  		accordionItemHeader.addEventListener("click", event => {
+
+	    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+	    // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+	    // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+	    //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+	    //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+	    // }
+
+		    accordionItemHeader.classList.toggle("active");
+		    const accordionItemBody = accordionItemHeader.nextElementSibling;
+		    if(accordionItemHeader.classList.contains("active")) {
+		      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+		    }
+		    else {
+		      accordionItemBody.style.maxHeight = 0;
+		    }
+
+		  });
+		});
+</script>
+
+</html>
