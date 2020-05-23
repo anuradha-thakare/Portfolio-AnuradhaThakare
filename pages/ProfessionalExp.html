@@ -150,6 +150,10 @@
 	<!--End Footer-->
 </body>
 <script>
+	$("i").click(function(){
+		$("nav").toggleClass("close");
+	});
+	
 	const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
 		accordionItemHeaders.forEach(accordionItemHeader => {

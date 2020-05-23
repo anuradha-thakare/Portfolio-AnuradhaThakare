@@ -1,7 +1,7 @@
 *{
 	margin:0px;
 	padding:0px;
-	}
+}
 	
 	body{
 		background-color: #f7e9c3;
@@ -43,6 +43,9 @@
 		min-height:40px;
 		position:relative;
 		margin-left: auto;
+		margin-right: auto;
+		display:flex;
+		flex:wrap;
 	}
 	
 	.nav-bar a{
@@ -75,20 +78,11 @@
 		display: block;
 		font-weight: bolder;
 	}
-	
-	
-	
-	.menu-toggle{
-		color:white;
-		cursor:pointer;
-		font-size:30px;
-		padding:10px;
-		transform: translate(10px,0px);
+
+	.menu-toggle i{
 		display:none;
 	}
-	
-	
-	
+
 	/*End Nav bar*/
 	
 	/*Body container*/
@@ -107,17 +101,16 @@
 	
 	.body-container-mini{
 		min-height:300px;
-		width:80%;
-		background-color:#f9f9f9;
+		width:98%;
+		background-color:white;
 		margin:auto;
 		font-family: 'Roboto Mono', monospace;
 		box-shadow: 10px 10px 20px gray;
-		border-radius:20px;
 	}
 	
 	.body-container-mini:hover{
 		min-height:350px;
-		width:90%;
+		width:100%;
 		box-shadow: 10px -10px 20px gray;
 		transition: 0.2s ease-out;
 	}
@@ -129,6 +122,7 @@
 		bottom:0;
 		position: fixed;
 		width:100%;
+		z-index: 3;
 	}
 	
 	.footer .site-map{
@@ -230,7 +224,6 @@
 		max-width:400px;
 		max-height: 300px;
 		transform: translate(0px,50%);
-		border-radius: 10px;
 		box-shadow: 10px 10px 20px gray;
 	}
 	
@@ -249,11 +242,18 @@
 	}
 	
 	#first-video{
-		margin-top:4%;
+		margin-top:1%;
 	}
 	
 	#last-video{
-		margin-bottom:10%;
+		margin-bottom:1%;
+	}
+
+	@media screen and (max-width:500px){
+		iframe{
+			transform: translate(-3%,10%);
+			transition: 0.01s ease-in-out;
+		}
 	}
 	
 /*end of my content*/
@@ -262,22 +262,14 @@
 
 
 /*Carousel*/
-
-.carousel-inner{
+.carousel-container{
+	padding:20px;
+	background: white;
 	box-shadow: 10px 10px 20px gray;
 }
 
-
-.carousel-inner .item img{
-	border-radius:10px;	 
-}
-
 #move-right-img{
-	transform: translateX(6%);
-}
-
-#reduce-item-width{
-	width:80%;
+	transform: translateX(3.5%);
 }
 
 .caption-color{
@@ -302,38 +294,126 @@
   margin-bottom: 50px;
 }
 
+.menu-toggle{
+	display:block;
+	color:black;
+}
+
 #col1{
 	padding-left: 6%; 
 }
 
 .column img {	
-  margin-top: 10px;
-  margin-left:10px;
-  margin-right:10px;
-  vertical-align: middle;
-  width: 100%;
-  border-radius:10px; 
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+  	margin-left:10px;
+  	margin-right:10px;
+  	vertical-align: middle;
+  	width: 90%;
+}
+
+.img-container{
+	background: white;
+	position:relative;
+	padding:10px auto;
+	min-height: 100px;
 	box-shadow: 10px 10px 20px gray;
+	margin-bottom: 10px;
 }
 
-.column img:hover {
-	transform: scale(1.2);
+.column .img-container:hover {
+	transform: scale(2);
+	z-index: 1;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
+/*-----------------------------------------------------------*/
+/*responsive navbar*/
+	@media screen and (max-width: 900px){
+		.header{
+			display: flex;
+			flex-direction: column;
+			position:relative;
+			text-align: center;
+		}
+
+		.menu-toggle i{
+			margin-top:20px;
+			display:inline-block;
+			font-size: 30px;
+			cursor: pointer;
+		}
+
+		.menu-toggle i:hover{
+			color:orange;
+		}
+
+		.header ul{
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 10px;
+			position: absolute;
+			transform: translateX(-50%);
+		}
+
+		.nav-bar{
+			height:500px;
+		}
+
+		.nav-bar a{
+			color:black;
+		}
+
+		.close{
+			display:none;
+		}
+	}
+
+
+/*-----------------------------------------------------------*/
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+@media screen and (max-width: 500px) {
+
+	
+
+	.body-container{
+		margin-top: 170px;
+		margin-bottom: 140px;
+	}
+
+	.accordion-item-header::after {
+	  right:10px;
+	}
+
+	.caption-color h3{
+		font-size: 10px;
+		color:white;
+	}
+
+	.caption-color{
+		font-size: 10px;
+		color:white;
+	}
+
+	.carousel-indicators{
+		display: none;
+	}
+
+	.column img {
+		transform:translateX(2.3%);
+	}
+
+	.column .img-container:hover {
+		transform: scale(1.2);
+	}
+
+  	.column {
+    	flex: 100%;
+    	max-width: 100%;
+    	margin-top:5px;
+    	margin-bottom:5px;
+ 	}
 }
 
 /*End of Gallery*/
