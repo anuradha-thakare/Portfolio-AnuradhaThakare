@@ -17,7 +17,7 @@
 	<!--Navbar-->
 	<div class="header">
 		<div class="name">
-			Dr. Anuradha D. Thakare
+			<a href="../index.html">Dr. Anuradha D. Thakare</a>
 		</div>
 		<div class="menu-toggle">
 			<i class="fa fa-bars" aria-hidden="true"></i>
@@ -25,7 +25,6 @@
 		<br><br>
 		<nav class="nav-bar ">
 			<ul class="menu-options ">
-				<li><a href="../index.html">Profile</a></li>
 				<li><a href="./Achievements.html">Invited talks/ Recognitions</a>	</li>
 				<li><a href="./Awards.html">Awards/ Certification</a>	</li>
 				<li><a href="./Patents.html">IPR/ Research</a></li>
@@ -41,7 +40,9 @@
 	<!--End Navbar-->
 	<br><br>
 	<!--Body main-->
-	<div class="body-container-mini" id="first-video">
+
+	<div class="body-container">
+		<div class="body-container-mini" id="first-video">
 		<div class="row" id="r1">
 			<div class="col col-md-6">
 				<iframe src="https://www.youtube.com/embed/v-X0lDs6PqQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -98,6 +99,9 @@
 			</div>
 		</div>
 	</div>
+	</div>
+
+	
 	<!--End Body main-->
 	<br><br>
 	<!--Footer-->
@@ -115,6 +119,8 @@
 	<!--End Footer-->
 </body>
 <script>
-
+	$("i").click(function(){
+		$("nav").toggleClass("close");
+	});
 </script>
 </html>
