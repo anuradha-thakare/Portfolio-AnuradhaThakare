@@ -176,8 +176,7 @@
 		font-size: large;
 	
 	}
-	
-	
+
 	#foot-index{
 		transform: translateX(-15%);
 	}
@@ -209,6 +208,10 @@
 
 	.publication-link{
 		font-size: 20px;
+	}
+
+	.interest-title{
+		padding:10px;
 	}
 
 	/*End Index page*/
