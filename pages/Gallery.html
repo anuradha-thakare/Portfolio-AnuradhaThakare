@@ -36,7 +36,7 @@
 		<nav class="nav-bar ">
 			<ul class="menu-options ">
 				<li><a href="./Achievements.html">Invited talks/ Recognitions</a>	</li>
-				<li><a href="./Awards.html">Awards/ Certifications</a>	</li>
+				<li><a href="./Awards.html">Awards/ Certification</a>	</li>
 				<li><a href="./Patents.html">IPR/ Research</a></li>
 				<li><a href="./Workshops.html">Workshops/ Webinars</a></li>
 				<li><a href="./ProfessionalExp.html">Professional Experience</a></li>
@@ -51,9 +51,11 @@
 	<br><br>
 	<!--Body main-->
 	<div class="body-container">
-		<div class="carousel-container"> 
+
+		<div class="carousel-border">
+			<div class="carousel-container"> 
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  		<!-- Indicators -->
+  			<!-- Indicators -->
 	  		<ol class="carousel-indicators">
 	    		<li data-target="#myCarousel" data-slide-to="0"id="move-right"></li>
 	    		<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -73,7 +75,7 @@
 			      	<img src="../images/1.jpg">
 			      	<div class="carousel-caption">
 			      		<div class="caption-color">
-			      			<h3>IET PUNE LN team 2020</h3>	
+			      			IET PUNE LN team 2020	
 			      		</div>
 			      	</div>
 			    </div>
@@ -82,7 +84,7 @@
 			      	<img src="../images/2.jpg">
 				    <div class="carousel-caption">
 				      	<div class="caption-color">
-				        	<h3>Appointed as Secretary IET PUNE LN</h3>
+				        	Appointed as Secretary IET PUNE LN
 				    	</div>
 				    </div>
 			    </div>
@@ -91,7 +93,7 @@
 			      	<img src="../images/3.jpg">
 			      	<div class="carousel-caption">
 			      		<div class="caption-color">
-			        		<h3>Seminar on Health Disorders by Dr.Prajakta Kulkarni</h3>
+			        		Seminar on Health Disorders by Dr.Prajakta Kulkarni
 			    		</div>
 			      	</div>
 			    </div>
@@ -100,7 +102,7 @@
 			      	<img src="../images/4.jpg" id="move-right-img">
 			      	<div class="carousel-caption">
 			      		<div class="caption-color">
-			        		<h3>Dr.Prajakta Kulkarni</h3>
+			        		Dr.Prajakta Kulkarni
 			        		<p>From Snehachikitsalay</p>
 			        	</div>
 			      	</div>
@@ -110,7 +112,7 @@
 				    <img src="../images/6.jpg">
 				    <div class="carousel-caption">
 				      	<div class="caption-color">
-				    	    <h3>Mou signing</h3>
+				    	    Mou signing
 				        	<p>Center of excellence in Information and Cyber Security </p>
 				        </div>
 				    </div>
@@ -120,7 +122,7 @@
 			      	<img src="../images/7.jpg">
 			      	<div class="carousel-caption">
 			      		<div class="caption-color">
-			        		<h3>IET on campus</h3>
+			        		IET on campus
 			        	</div>
 			      	</div>
 			    </div>
@@ -129,7 +131,7 @@
 			      	<img src="../images/8.jpg">
 			      	<div class="carousel-caption">
 			      		<div class="caption-color">
-			        		<h3>IET on campus</h3>
+			        		IET on campus
 			        	</div>
 			      	</div>
 			    </div>
@@ -138,7 +140,7 @@
 			      	<img src="../images/9.jpg">
 			      	<div class="carousel-caption caption-color">
 			      		<div class="caption-color">
-			        		<h3>IET on campus</h3>
+			        		IET on campus
 			        	</div>
 			      	</div>
 			    </div>
@@ -147,7 +149,7 @@
 			      	<img src="../images/10.jpg">
 			      	<div class="carousel-caption">
 			      		<div class="caption-color">
-			        		<h3>ACM ICPE</h3>
+			        		ACM ICPE
 			        		<p>conference at IIT Bombay</p>
 			        	</div>
 			      	</div>
@@ -164,10 +166,8 @@
 		    	<span class="sr-only">Next</span>
 		  	</a>
 		</div>
+		</div>	
 		</div>
-
-		
-
 
 
 		<div class="row">
@@ -227,9 +227,9 @@
 	<!--Footer-->
 	<div class="footer">
 		<div class="site-map">
-			<a href="#"><i class="fab fa-facebook"></i></a>
-			<a href="#"><i class="fab fa-twitter-square"></i></a>
-			<a href="#"><i class="fab fa-youtube"></i></a>
+			<a href="https://www.linkedin.com/in/dr-anuradha-thakare-41541abb" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://www.facebook.com/anuradha.thakare.543" target="_blank"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.youtube.com/channel/UC5GvOzBz1Ul_s-DHYKsU28Q" target="_blank"><i class="fab fa-youtube"></i></a>
 		</div>
 		<div class="footer-foot">
 			Copy Rights <span>&copy;</span> 2020
@@ -238,6 +238,7 @@
 	<!--End Footer-->
 </body>
 <script>
+	$("nav").addClass("close");
 	$("i").click(function(){
 		$("nav").toggleClass("close");
 	});
